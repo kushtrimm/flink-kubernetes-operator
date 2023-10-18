@@ -59,7 +59,7 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: |
-            flink-kubernetes-operator
+            kushtrim/flink-kubernetes-operator
           tags: |
             type=raw,value=main,enable=${{ github.ref == 'refs/heads/main' }}
             type=sha,prefix=,format=short
